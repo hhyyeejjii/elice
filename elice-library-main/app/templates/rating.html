@@ -1,0 +1,10 @@
+
+<div class="flex mt-2">
+  {% for n in range(5) %}
+    {% if rating > n %}
+      <img width="32" src="/static/image/star_fill.png">
+    {% else %}
+      <img width="32" src="/static/image/star_empty.png">
+    {% endif %}
+  {% endfor %}
+</div>

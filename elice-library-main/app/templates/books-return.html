@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block navigation %}
+  {% include 'header.html' %}
+{% endblock %}
+{% block content %}
+  <div class="grid gap-6 p-3 grid-cols-4 w-full">
+    {% for rent in book_rents %}
+      {% with book=rent.book %}
+        <form method="post">
+          <div class="w-full pl-5 pr-5 relative border-box">
+            <div
+                class="w-full h-96 text-center flex flex-col flex-gap-3 items-center border-solid border-2 border-gray-300 p-2 bg-white">
+              <img width="100px" src="{{ book.image_path }}">
+              <a href="/books/{{ book.id }}" class="block mt-2">{{ book.name }}</a>
+              <div>
+                {% with rating=book.rating %}
+                  {% include 'rating.html' %}
+                {% endwith %}
+              </div>
+              <span class="block  mt-2">{{ rent.rent_at }}</span>
+              <input type="hidden" name="rent_id" value="{{ rent.id }}">
+              <button
+                  class="absolute bottom-3 mt-2 w-9/12 py-2 px-4 bg-purple-500 text-white font-semibold rounded-lg shadow-md focus:outline-none">
+                반납하기
+              </button>
+            </div>
+          </div>
+        </form>
+      {% endwith %}
+    {% endfor %}
+  </div>
+{% endblock %}

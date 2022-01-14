@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+  <div class="flex justify-center min-h-full pt-40 text-center">
+    <form method="post">
+      <input class="rounded-md block w-full mt-2 p-2" name="email" type="email" placeholder="Email" required />
+      <input class="rounded-md block w-full mt-2 p-2" name="password" type="password" placeholder="Password" required />
+      <button class="mt-2 w-full py-2 px-4 bg-purple-500 text-white font-semibold rounded-lg shadow-md focus:outline-none" type="submit">Sign In</button>
+      <a href="/sign-up" class="block mt-2 py-2 px-4 bg-green-500 text-white font-semibold rounded-lg shadow-md focus:outline-none">Sign Up</a>
+    </form>
+  </div>
+{% endblock %}

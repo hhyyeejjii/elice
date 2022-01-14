@@ -1,0 +1,21 @@
+version: "3"
+services:
+  db:
+    image: mysql:8.0
+    environment:
+      MYSQL_USER: kdt
+      MYSQL_PASSWORD: kdt_password
+      MYSQL_DATABASE: library
+      MYSQL_ROOT_PASSWORD: kdt_password
+    ports:
+      - "3306:3306"
+    volumes:
+      - kdt-data:/var/lib/mysql
+    command: [
+        '--character-set-server=utf8',
+        '--skip-character-set-client-handshake',
+        '--collation-server=utf8_bin',
+    ]
+
+volumes:
+  kdt-data:

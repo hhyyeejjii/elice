@@ -1,0 +1,36 @@
+<!doctype html>
+
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+
+  <title>엘리스 도서관</title>
+
+  <link rel="stylesheet" href="/static/css/tailwind.min.css">
+  <script src="/static/js/jquery.min.js"></script>
+  {% block css %}
+  {% endblock %}
+  {% block script %}
+  {% endblock %}
+  <script>
+    $(document).ready(function () {
+      {% with messages = get_flashed_messages() %}
+        {% if messages %}
+          alert('{{ messages[0]}}')
+        {% endif %}
+      {% endwith %}
+    })
+  </script>
+</head>
+
+<body>
+<div class="min-h-screen bg-gray-200">
+{% block navigation %}
+{% endblock %}
+<div class=" w-100 min-h-full">
+  {% block content %}
+  {% endblock %}
+</div>
+</div>
+</body>
+</html>

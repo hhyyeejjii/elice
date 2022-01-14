@@ -1,0 +1,14 @@
+<nav class="box-border h-12 text-2xl bg-white">
+  <div class=" float-left">
+    <a class="block p-4" href="/"><h1 class="">엘리스 도서관</h1></a>
+  </div>
+  <div class="box-border float-right flex justify-start">
+    <a class="block p-4" href="/books-rent"><h2>대여기록</h2></a>
+    <a class="block p-4" href="/books-return"><h2>반납하기</h2></a>
+    {% if current_user %}
+      <a class="block p-4" href="/sign-out"><h2>로그아웃</h2></a>
+    {% else %}
+      <a class="block p-4" href="/sign-in"><h2>로그인</h2></a>
+    {% endif %}
+  </div>
+</nav>

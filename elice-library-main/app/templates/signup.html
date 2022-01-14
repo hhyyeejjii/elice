@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="flex justify-center min-h-full pt-40 text-center">
+        <form method="post" id="sign-in">
+            <input class="rounded-md block w-full mt-2 p-2" name="name" type="text" placeholder="Name"
+                   required/>
+            <input class="rounded-md block w-full mt-2 p-2" name="email" type="email" placeholder="Email"
+                   required/>
+            <input class="rounded-md block w-full mt-2 p-2" id="password1" name="password1"
+                   type="password" placeholder="Password" required/>
+            <p>
+                패스워드에는 특수문자, 영문, 숫자가 1개 이상 포함되어야 합니다. <br>
+                패스워드 길이는 8자 이상이어야합니다.
+            </p>
+            <input class="rounded-md block w-full mt-2 p-2" id="password2" name="password2"
+                   type="password" placeholder="Repeat Password" required/>
+            <button
+                    class="mt-2 w-full py-2 px-4 bg-purple-500 text-white font-semibold rounded-lg shadow-md focus:outline-none"
+                    type="submit">Sign In
+            </button>
+        </form>
+    </div>
+    <script>
+        $(document).ready(function () {
+            $('#sign-in').on('submit', function (e) {
+                if ($('#password1').val() !== $('#password2').val()) {
+                    e.preventDefault();
+                    alert("패스워드가 맞지 않습니다. 패스워드를 확인해주세요.")
+                }
+            })
+        })
+    </script>
+{% endblock %}
