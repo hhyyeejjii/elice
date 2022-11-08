@@ -1,0 +1,7 @@
+backend/deploy/flask_app/config.py
+backend/deploy/flask_app/templates
+backend/deploy/flask_app/db.db
+backend/deploy/nginx/build
+backend/deploy/nginx/build.zip
+backend/deploy/flask_app/__pycache__
+backend/deploy/flask_app/module/__pycache__

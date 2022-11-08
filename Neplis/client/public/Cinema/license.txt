@@ -1,0 +1,11 @@
+Model Information:
+* title:	Home Cinema
+* source:	https://sketchfab.com/3d-models/home-cinema-f0cdefe23ae84b45ab861ab0427a4166
+* author:	hirudo (https://sketchfab.com/hirudo)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Home Cinema" (https://sketchfab.com/3d-models/home-cinema-f0cdefe23ae84b45ab861ab0427a4166) by hirudo (https://sketchfab.com/hirudo) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

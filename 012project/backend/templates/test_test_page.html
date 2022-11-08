@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
+    <script>
+        function next(){
+            let guestion_number = 1 // 문제 번호에 따라 페이지 변환
+            console.log('next');
+            $.ajax({
+            url: '/test/'+question_number,
+            type: 'get',
+            success: function (res){
+                let result = res['result']
+                if (result == "success") {
+                    alert("응답 저장 완료!")
+                    window.location.reload()
+                } else {
+                    alert("문제가 생겼어요. 다시 시도해 주세요.")
+                }
+            }
+        });
+        }
+    </script>
+</head>
+<body>
+    <a href="#" onclick="next();return false;">다음 페이지로</a>
+</body>
+</html>

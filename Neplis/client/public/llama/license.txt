@@ -1,0 +1,11 @@
+Model Information:
+* title:	LowPoly Llama
+* source:	https://sketchfab.com/3d-models/lowpoly-llama-9cc3ed44649e4533a0a057f1175e728c
+* author:	Romulogan (https://sketchfab.com/Romulogan)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "LowPoly Llama" (https://sketchfab.com/3d-models/lowpoly-llama-9cc3ed44649e4533a0a057f1175e728c) by Romulogan (https://sketchfab.com/Romulogan) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

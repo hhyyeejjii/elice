@@ -1,0 +1,11 @@
+Model Information:
+* title:	Beach
+* source:	https://sketchfab.com/3d-models/beach-d5a143c2d18c4447a5dcd1a97bf2c602
+* author:	Dani Ortega (https://sketchfab.com/I_starboy_I)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Beach" (https://sketchfab.com/3d-models/beach-d5a143c2d18c4447a5dcd1a97bf2c602) by Dani Ortega (https://sketchfab.com/I_starboy_I) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

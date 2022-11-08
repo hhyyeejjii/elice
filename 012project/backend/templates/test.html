@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
+    <script>
+        function submitAnswers(){
+            console.log('submitAnswers');
+            let sample_answers = ['a', 'b', 'a', 'b', 'a', 'b', 'a', 'b', 'a', 'b', 'a', 'b']
+            $.ajax({
+            url: '/result',
+            type: 'post',
+            traditional: true,
+            data: {
+                'answers': sample_answers,
+            },
+            success: function (res){
+                let result = res['result']
+                if (result == "success") {
+                    alert("응답 저장 완료!")
+                    window.location.reload()
+                } else {
+                    alert("문제가 생겼어요. 다시 시도해 주세요.")
+                }
+            }
+        });
+        }
+    </script>
+</head>
+<body>
+    <a href="#" onclick="submitAnswers();return false;">테스트 종료! 저장하기</a>
+</body>
+</html>
